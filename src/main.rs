@@ -1,3 +1,5 @@
+#![feature(generic_const_exprs)]
+
 #[macro_use] pub mod helpers;
 mod questions;
 

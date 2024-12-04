@@ -2,6 +2,7 @@
 mod day1;
 mod day2;
 mod day3;
+mod day4;
 
 #[allow(unused_variables)]
 pub trait Question {
