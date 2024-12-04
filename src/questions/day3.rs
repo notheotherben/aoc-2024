@@ -20,7 +20,6 @@ impl Question for Day3 {
         let iter = MulExtractor { input, pos: 0 };
         let mut sum = 0;
         for (left, right) in iter {
-            println!("{} * {}", left, right);
             sum += left * right;
         }
         Ok(sum.to_string())
@@ -34,7 +33,6 @@ impl Question for Day3 {
             let iter = MulExtractor { input: instructions, pos: 0 };
 
             for (left, right) in iter {
-                println!("{} * {}", left, right);
                 sum += left * right;
             }
         }
