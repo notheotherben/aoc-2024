@@ -126,11 +126,11 @@ impl Update {
         let empty_rule = Rule::default();
 
         for page in &self.pages[1..] {
-            let preceeds = rules.get(page).unwrap_or(&empty_rule);
+            let precedes = rules.get(page).unwrap_or(&empty_rule);
             
             let mut inserted = false;
             for (i, ordered_page) in ordered.iter().enumerate() {
-                if preceeds.pages.contains(ordered_page) {
+                if precedes.pages.contains(ordered_page) {
                     ordered.insert(i, *page);
                     inserted = true;
                     break;
