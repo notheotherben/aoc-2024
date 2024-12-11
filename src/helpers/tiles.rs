@@ -56,6 +56,11 @@ macro_rules! grid {
                 self.0.get(y, x).copied()
             }
 
+            #[allow(dead_code)]
+            pub fn set(&mut self, x: usize, y: usize, tile: $tile) {
+                self.0.set(y, x, tile);
+            }
+
             $($($impl)*)?
         }
 

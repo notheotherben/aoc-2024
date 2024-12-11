@@ -1,3 +1,15 @@
+/// Generates the tests used to run a daily question and validate it against the test input.
+/// 
+/// # Example
+/// ```rust
+/// question!(Day1, validate = [
+///     {
+///        input: r#"input"#
+///        part1: "1",
+///        part2: "2"
+///     },
+/// ], skip=true);
+/// ```
 macro_rules! question {
     ($day:ident, validate = [
         $(
